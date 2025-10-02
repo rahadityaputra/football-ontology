@@ -13,457 +13,466 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Assistant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AttackingMidfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CentralMidfielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CentreBack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Club"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ClubManager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ClubStadium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Competition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Country"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Defender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DefensiveMidfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forward"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FriendlyMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Goalkeeper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#InternationalTournament"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KnockoutMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#League"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeagueMatch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeftBack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Main"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Manager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Match"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Midfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NationalStadium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NationalTeamManager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Player"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Position"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Referee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RightBack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Season"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stadium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Starter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Striker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SubtitutePlayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VAR"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Winger"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#coaches"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCoach"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasNationality"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#locatedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#participatesIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#playsAs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#playsFor"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#birthDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#capacity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#goalsScored"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AFCAsianCup_2023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AchrafHakimi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AfricanCupOfNations_2023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AlissonBecker"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AllianzArena"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AlphonsoDavies"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AndyRobertson"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AnfieldStadium"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AntonioRudiger"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Antony"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Argentina"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arne_Slot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Barcelona"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bayern_Munich"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Brazil"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BrunoFernandes"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BukayoSaka"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bundesliga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Casemiro"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Chelsea"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CopaAmerica_2024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Curtis_Jones"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DaniCarvajal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DeclanRice"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DidierDeschamps"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EderMilitao"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ederson"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#England"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Eredivisie"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ErlingHaaland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FIFAWorldCup_2026"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FedericoValverde"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#France"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FrenkieDeJong"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GarethSouthgate"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Gennaro_Gattuso"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Germany"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GiovanniDiLorenzo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hansi_Flick"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HarryKane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Harry_Kane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Indonesia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Italy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JamalMusiala"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JanOblak"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JoaoCancelo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JoshuaKimmich"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JulianNagelsmann"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KarimBenzema"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KevinDeBruyne"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KhvichaKvaratskhelia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KieranTrippier"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KyleWalker"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Laliga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Lamine_Yamal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LeroySane"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Leverkusen"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Lewandowski"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LionelScaloni"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Liverpool"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Luis_de_Lá_Fuente"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LukaModric"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LukeShaw"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manchester_City"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manchester_United"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ManuelNeuer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MaracanaStadium"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MartinOdegaard"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Mbappe"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Meguire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Messi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MohamedSalah"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NicoloBarella"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OldTrafford"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Onana"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Palmer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Patrick_Kluivert"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Pep_Guardiola"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PhilFoden"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Portugal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Premier_League"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Real_Madrid"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RobertLewandowski"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RobertoMartinez"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rodri"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RonaldAraujo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ronaldo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RubenDias"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Salah"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SantiagoBernabeu"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Serie_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Spain"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#StadeDeFrance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TheoHernandez"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ThibautCourtois"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ToniKroos"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UEFAEuro_2024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Unai_Emery"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#VictorOsimhen"/>
+        <NamedIndividual IRI="#AntonioRudiger"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ViniciusJunior"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ToniKroos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#goalsScored"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JamalMusiala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AllianzArena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chelsea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lewandowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ronaldo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rodri"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefensiveMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AfricanCupOfNations_2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brazil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LukeShaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsFor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JoaoCancelo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laliga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AchrafHakimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClubManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antony"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VirgilVanDijk"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#WembleyStadium"/>
+        <NamedIndividual IRI="#ThibautCourtois"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#World_Cup"/>
+        <Class IRI="#RightBack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VictorOsimhen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LionelScaloni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gennaro_Gattuso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RonaldAraujo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KieranTrippier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GiovanniDiLorenzo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester_United"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Xabi_Alonso"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casemiro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#N&apos;GoloKante"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BukayoSaka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GarethSouthgate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeclanRice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftBack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arne_Slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JoshuaKimmich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriendlyMatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serie_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StadeDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlphonsoDavies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CopaAmerica_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Messi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalTeamManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patrick_Kluivert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnockoutMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coaches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LukaModric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FedericoValverde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNationality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackingMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forward"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhilFoden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClubStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bayern_Munich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EderMilitao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MohamedSalah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnfieldStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheoHernandez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AndyRobertson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Striker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luis_de_Lá_Fuente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeroySane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManuelNeuer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrenkieDeJong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unai_Emery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meguire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DidierDeschamps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Referee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JulianNagelsmann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Onana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goalkeeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WembleyStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Premier_League"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JanOblak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ederson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#League"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#birthDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FIFAWorldCup_2026"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#represents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentralMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NicoloBarella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlissonBecker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bundesliga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrunoFernandes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Match"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KyleWalker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eredivisie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lamine_Yamal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#World_Cup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFCAsianCup_2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryKane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KhvichaKvaratskhelia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertoMartinez"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsAs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liverpool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFAEuro_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harry_Kane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubtitutePlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RubenDias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaracanaStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KarimBenzema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DaniCarvajal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mbappe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeagueMatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Curtis_Jones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalTournament"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester_City"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Assistant"/>
@@ -976,13 +985,61 @@
         <NamedIndividual IRI="#Messi"/>
         <NamedIndividual IRI="#Argentina"/>
     </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSeason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#coaches"/>
         <ObjectProperty IRI="#hasCoach"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#Competition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsAs"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsFor"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#represents"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsAs"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsFor"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#represents"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
