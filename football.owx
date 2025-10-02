@@ -1018,6 +1018,10 @@
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#locatedIn"/>
         <Class IRI="#Country"/>
     </ObjectPropertyRange>
