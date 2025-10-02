@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xml:base="http://example.org/football"
+    xmlns:fb="http://example.org/football#">
+  <owl:Ontology rdf:about="http://example.org/football">
+    <rdfs:label>Football Ontology (RDF/XML)</rdfs:label>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://example.org/football#Person"/>
+  <owl:Class rdf:about="http://example.org/football#Player"/>
+  <owl:Class rdf:about="http://example.org/football#Manager"/>
+  <owl:Class rdf:about="http://example.org/football#Referee"/>
+  <owl:Class rdf:about="http://example.org/football#Country"/>
+  <owl:Class rdf:about="http://example.org/football#Team"/>
+  <owl:Class rdf:about="http://example.org/football#Club"/>
+  <owl:Class rdf:about="http://example.org/football#NationalTeam"/>
+  <owl:Class rdf:about="http://example.org/football#Competition"/>
+  <owl:Class rdf:about="http://example.org/football#League"/>
+  <owl:Class rdf:about="http://example.org/football#InternationalTournament"/>
+  <owl:Class rdf:about="http://example.org/football#Season"/>
+  <owl:Class rdf:about="http://example.org/football#Round"/>
+  <owl:Class rdf:about="http://example.org/football#GroupStage"/>
+  <owl:Class rdf:about="http://example.org/football#KnockoutRound"/>
+  <owl:Class rdf:about="http://example.org/football#QuarterFinal"/>
+  <owl:Class rdf:about="http://example.org/football#SemiFinal"/>
+  <owl:Class rdf:about="http://example.org/football#Final"/>
+  <owl:Class rdf:about="http://example.org/football#Stadium"/>
+  <owl:Class rdf:about="http://example.org/football#ClubStadium"/>
+  <owl:Class rdf:about="http://example.org/football#NationalStadium"/>
+  <owl:Class rdf:about="http://example.org/football#Match"/>
+  <owl:Class rdf:about="http://example.org/football#LeagueMatch"/>
+  <owl:Class rdf:about="http://example.org/football#KnockoutMatch"/>
+  <owl:Class rdf:about="http://example.org/football#FriendlyMatch"/>
+  <owl:Class rdf:about="http://example.org/football#Position"/>
+  <owl:Class rdf:about="http://example.org/football#Goalkeeper"/>
+  <owl:Class rdf:about="http://example.org/football#Defender"/>
+  <owl:Class rdf:about="http://example.org/football#RightBack"/>
+  <owl:Class rdf:about="http://example.org/football#LeftBack"/>
+  <owl:Class rdf:about="http://example.org/football#CentreBack"/>
+  <owl:Class rdf:about="http://example.org/football#Midfielder"/>
+  <owl:Class rdf:about="http://example.org/football#AttackingMidfielder"/>
+  <owl:Class rdf:about="http://example.org/football#CentralMidfielder"/>
+  <owl:Class rdf:about="http://example.org/football#DefensiveMidfielder"/>
+  <owl:Class rdf:about="http://example.org/football#Forward"/>
+  <owl:Class rdf:about="http://example.org/football#Striker"/>
+  <owl:Class rdf:about="http://example.org/football#Winger"/>
+  <owl:Class rdf:about="http://example.org/football#LineupRole"/>
+  <owl:Class rdf:about="http://example.org/football#Starter"/>
+  <owl:Class rdf:about="http://example.org/football#Substitute"/>
+  <owl:Class rdf:about="http://example.org/football#OfficiatingRole"/>
+  <owl:Class rdf:about="http://example.org/football#Main"/>
+  <owl:Class rdf:about="http://example.org/football#Assistant"/>
+  <owl:Class rdf:about="http://example.org/football#VAR"/>
+  <owl:Class rdf:about="http://example.org/football#ManagingRole"/>
+  <owl:Class rdf:about="http://example.org/football#ClubManager"/>
+  <owl:Class rdf:about="http://example.org/football#NationalTeamManager"/>
+  <owl:Class rdf:about="http://example.org/football#Participation"/>
+  <owl:Class rdf:about="http://example.org/football#Officiating"/>
+  <owl:Class rdf:about="http://example.org/football#ManagingTenure"/>
+  <owl:Class rdf:about="http://example.org/football#Event"/>
+  <owl:Class rdf:about="http://example.org/football#Goal"/>
+  <owl:Class rdf:about="http://example.org/football#Assist"/>
+  <owl:Class rdf:about="http://example.org/football#CardEvent"/>
+  <owl:Class rdf:about="http://example.org/football#YellowCard"/>
+  <owl:Class rdf:about="http://example.org/football#RedCard"/>
+  <owl:Class rdf:about="http://example.org/football#Foul"/>
+  <owl:Class rdf:about="http://example.org/football#Substitution"/>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Player"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Person"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Player"><rdfs:subClassOf rdf:resource="http://example.org/football#Person"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Manager"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Person"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Manager"><rdfs:subClassOf rdf:resource="http://example.org/football#Person"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Referee"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Person"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Referee"><rdfs:subClassOf rdf:resource="http://example.org/football#Person"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Club"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Team"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Club"><rdfs:subClassOf rdf:resource="http://example.org/football#Team"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#NationalTeam"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Team"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#NationalTeam"><rdfs:subClassOf rdf:resource="http://example.org/football#Team"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#League"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Competition"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#League"><rdfs:subClassOf rdf:resource="http://example.org/football#Competition"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#InternationalTournament"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Competition"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#InternationalTournament"><rdfs:subClassOf rdf:resource="http://example.org/football#Competition"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#GroupStage"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Round"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#GroupStage"><rdfs:subClassOf rdf:resource="http://example.org/football#Round"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#KnockoutRound"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Round"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#KnockoutRound"><rdfs:subClassOf rdf:resource="http://example.org/football#Round"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#QuarterFinal"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#KnockoutRound"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#QuarterFinal"><rdfs:subClassOf rdf:resource="http://example.org/football#KnockoutRound"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#SemiFinal"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#KnockoutRound"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#SemiFinal"><rdfs:subClassOf rdf:resource="http://example.org/football#KnockoutRound"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Final"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#KnockoutRound"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Final"><rdfs:subClassOf rdf:resource="http://example.org/football#KnockoutRound"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#ClubStadium"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Stadium"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#ClubStadium"><rdfs:subClassOf rdf:resource="http://example.org/football#Stadium"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#NationalStadium"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Stadium"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#NationalStadium"><rdfs:subClassOf rdf:resource="http://example.org/football#Stadium"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#LeagueMatch"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Match"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#LeagueMatch"><rdfs:subClassOf rdf:resource="http://example.org/football#Match"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#KnockoutMatch"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Match"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#KnockoutMatch"><rdfs:subClassOf rdf:resource="http://example.org/football#Match"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#FriendlyMatch"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Match"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#FriendlyMatch"><rdfs:subClassOf rdf:resource="http://example.org/football#Match"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Goalkeeper"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Position"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Goalkeeper"><rdfs:subClassOf rdf:resource="http://example.org/football#Position"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Defender"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Position"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Defender"><rdfs:subClassOf rdf:resource="http://example.org/football#Position"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#RightBack"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Defender"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#RightBack"><rdfs:subClassOf rdf:resource="http://example.org/football#Defender"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#LeftBack"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Defender"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#LeftBack"><rdfs:subClassOf rdf:resource="http://example.org/football#Defender"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#CentreBack"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Defender"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#CentreBack"><rdfs:subClassOf rdf:resource="http://example.org/football#Defender"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Midfielder"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Position"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Midfielder"><rdfs:subClassOf rdf:resource="http://example.org/football#Position"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#AttackingMidfielder"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Midfielder"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#AttackingMidfielder"><rdfs:subClassOf rdf:resource="http://example.org/football#Midfielder"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#CentralMidfielder"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Midfielder"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#CentralMidfielder"><rdfs:subClassOf rdf:resource="http://example.org/football#Midfielder"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#DefensiveMidfielder"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Midfielder"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#DefensiveMidfielder"><rdfs:subClassOf rdf:resource="http://example.org/football#Midfielder"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Forward"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Position"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Forward"><rdfs:subClassOf rdf:resource="http://example.org/football#Position"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Striker"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Forward"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Striker"><rdfs:subClassOf rdf:resource="http://example.org/football#Forward"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Winger"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Forward"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Winger"><rdfs:subClassOf rdf:resource="http://example.org/football#Forward"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Starter"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#LineupRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Starter"><rdfs:subClassOf rdf:resource="http://example.org/football#LineupRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Substitute"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#LineupRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Substitute"><rdfs:subClassOf rdf:resource="http://example.org/football#LineupRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Main"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#OfficiatingRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Main"><rdfs:subClassOf rdf:resource="http://example.org/football#OfficiatingRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Assistant"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#OfficiatingRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Assistant"><rdfs:subClassOf rdf:resource="http://example.org/football#OfficiatingRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#VAR"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#OfficiatingRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#VAR"><rdfs:subClassOf rdf:resource="http://example.org/football#OfficiatingRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#ClubManager"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#ManagingRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#ClubManager"><rdfs:subClassOf rdf:resource="http://example.org/football#ManagingRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#NationalTeamManager"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#ManagingRole"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#NationalTeamManager"><rdfs:subClassOf rdf:resource="http://example.org/football#ManagingRole"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Goal"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Event"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Goal"><rdfs:subClassOf rdf:resource="http://example.org/football#Event"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Assist"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Event"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Assist"><rdfs:subClassOf rdf:resource="http://example.org/football#Event"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#CardEvent"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Event"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#CardEvent"><rdfs:subClassOf rdf:resource="http://example.org/football#Event"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#YellowCard"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#CardEvent"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#YellowCard"><rdfs:subClassOf rdf:resource="http://example.org/football#CardEvent"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#RedCard"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#CardEvent"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#RedCard"><rdfs:subClassOf rdf:resource="http://example.org/football#CardEvent"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Foul"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Event"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Foul"><rdfs:subClassOf rdf:resource="http://example.org/football#Event"/></owl:Class>
+  <owl:Axiom>
+    <owl:annotatedSource rdf:resource="http://example.org/football#Substitution"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:annotatedTarget rdf:resource="http://example.org/football#Event"/>
+  </owl:Axiom>
+  <owl:Class rdf:about="http://example.org/football#Substitution"><rdfs:subClassOf rdf:resource="http://example.org/football#Event"/></owl:Class>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasHomeTeam">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#hasHomeTeam"/>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasAwayTeam">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#hasAwayTeam"/>
+  <owl:ObjectProperty rdf:about="http://example.org/football#playedAt">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://example.org/football#Stadium"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#playedAt"/>
+  <owl:ObjectProperty rdf:about="http://example.org/football#takesPlaceInSeason">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://example.org/football#Season"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#partOfCompetition">
+    <rdfs:domain rdf:resource="http://example.org/football#Season"/>
+    <rdfs:range rdf:resource="http://example.org/football#Competition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasSeason">
+    <rdfs:domain rdf:resource="http://example.org/football#Competition"/>
+    <rdfs:range rdf:resource="http://example.org/football#Season"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasRound">
+    <rdfs:domain rdf:resource="http://example.org/football#Season"/>
+    <rdfs:range rdf:resource="http://example.org/football#Round"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#isPartOfRound">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://example.org/football#Round"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#homeStadium">
+    <rdfs:domain rdf:resource="http://example.org/football#Team"/>
+    <rdfs:range rdf:resource="http://example.org/football#Stadium"/>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#homeStadium"/>
+  <owl:ObjectProperty rdf:about="http://example.org/football#locatedInCountry">
+    <rdfs:domain rdf:resource="http://example.org/football#Team"/>
+    <rdfs:range rdf:resource="http://example.org/football#Country"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#memberOf">
+    <rdfs:domain rdf:resource="http://example.org/football#Player"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#participationOf">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://example.org/football#Player"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#participationIn">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://example.org/football#Match"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#forTeam">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasLineupRole">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://example.org/football#LineupRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#playsPosition">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://example.org/football#Position"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#officiatingOf">
+    <rdfs:domain rdf:resource="http://example.org/football#Officiating"/>
+    <rdfs:range rdf:resource="http://example.org/football#Referee"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#officiatingIn">
+    <rdfs:domain rdf:resource="http://example.org/football#Officiating"/>
+    <rdfs:range rdf:resource="http://example.org/football#Match"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#hasOfficiatingRole">
+    <rdfs:domain rdf:resource="http://example.org/football#Officiating"/>
+    <rdfs:range rdf:resource="http://example.org/football#OfficiatingRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#managedBy">
+    <rdfs:domain rdf:resource="http://example.org/football#Team"/>
+    <rdfs:range rdf:resource="http://example.org/football#ManagingTenure"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#managingManager">
+    <rdfs:domain rdf:resource="http://example.org/football#ManagingTenure"/>
+    <rdfs:range rdf:resource="http://example.org/football#Manager"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#managingTeam">
+    <rdfs:domain rdf:resource="http://example.org/football#ManagingTenure"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#managingRole">
+    <rdfs:domain rdf:resource="http://example.org/football#ManagingTenure"/>
+    <rdfs:range rdf:resource="http://example.org/football#ManagingRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#eventInMatch">
+    <rdfs:domain rdf:resource="http://example.org/football#Event"/>
+    <rdfs:range rdf:resource="http://example.org/football#Match"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#byPlayer">
+    <rdfs:domain rdf:resource="http://example.org/football#Event"/>
+    <rdfs:range rdf:resource="http://example.org/football#Player"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#eventForTeam">
+    <rdfs:domain rdf:resource="http://example.org/football#Event"/>
+    <rdfs:range rdf:resource="http://example.org/football#Team"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/football#assistedBy">
+    <rdfs:domain rdf:resource="http://example.org/football#Goal"/>
+    <rdfs:range rdf:resource="http://example.org/football#Player"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#hasKickoffTime">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#hasKickoffTime"/>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#hasScoreHome">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#hasScoreHome"/>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#hasScoreAway">
+    <rdfs:domain rdf:resource="http://example.org/football#Match"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://example.org/football#hasScoreAway"/>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#capacity">
+    <rdfs:domain rdf:resource="http://example.org/football#Stadium"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#number">
+    <rdfs:domain rdf:resource="http://example.org/football#Participation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#minute">
+    <rdfs:domain rdf:resource="http://example.org/football#Event"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#startDate">
+    <rdfs:domain rdf:resource="http://example.org/football#ManagingTenure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.org/football#endDate">
+    <rdfs:domain rdf:resource="http://example.org/football#ManagingTenure"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.org/football#Match">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/football#hasHomeTeam"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/football#hasAwayTeam"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/football#playedAt"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>
