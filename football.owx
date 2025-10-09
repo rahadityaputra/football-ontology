@@ -12,6 +12,184 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Kelompok Ontology Football Player in Europa : 
+- Rahaditya Abimanyu Putra / 123230095
+- Martin Aji Nugraha / 123230092
+- Gusti Rama / 123230040
+- Deni Norman Zaky / 123220165
+- Hiero Purbandono / 123230086
+
+===============================
+
+== Komentar Untuk Sparsql ==
+----------------------------------------------
+1. Tolong tampilkan individual atau intance yang bertipe iceCream
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?individual
+WHERE {
+  ?individual rdf:type ex:iceCream 
+}
+```
+----------------------------------------------
+2, Terus tampilin namanya dan urutin berdasarkan individual-nya
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?individual ?name
+WHERE {
+  ?individual rdf:type ex:iceCream .
+  ?individual ex:name ?name .
+}
+ORDER BY ?individual
+```
+----------------------------------------------
+3. Tampilkan individual iceCream yang memiliki rasa vanilla
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?individual
+WHERE {
+  ?individual ex:hasFlavors ex:vanilla .
+}
+```
+----------------------------------------------
+4. Apa nama iceCream yang memiliki rasa vanilla itu
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+WHERE {
+  ?individual ex:name ?name .
+  ?individual ex:hasFlavors ex:vanilla .
+}
+```
+----------------------------------------------
+5.Tampilkan individual dan nama iceCream yang cocok untuk dimakan saat ada kesempatan (occasion)
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?individual ?name
+WHERE {
+  ?individual ex:bestEating ex:occasion .
+  ?individual ex:name ?name
+}
+```
+----------------------------------------------
+6.Apa nama iceCream yang cocok diminum dengan kopi
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?individual ?name
+WHERE {
+  ?individual ex:bestDrinkPairing ex:cofee .
+  ?individual ex:name ?name
+}
+```
+///////////////////////////////
+== Percobaan saat di kelas ==
+///////////////////////////////
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+	WHERE { 
+	  ?individual ex:name ?name .
+  ?individual ex:hasFlavors ex:vanilla .
+	}
+```
+//////////////////////////////
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+	WHERE { 
+	  ?individual ex:name ?name .
+  ?individual ex:hasFlavors ex:chocolate .
+	}
+```
+/////////////////////////////////
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+	WHERE { 
+	  ?individual ex:name ?name .
+  ?individual ex:bestFoodPairing ex:wafer .
+	}
+```
+//////////////////////////////////////////
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+	WHERE { 
+	  ?individual ex:name ?name .
+  ?individual ex:bestDrinkPairing ex:blackCoffee .
+	}
+``
+/////////////////////////////////////
+```
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name
+	WHERE { 
+	  ?individual ex:name ?name .
+	  ?individual ex:hasBrand ?brand1 .
+	}
+```
+/////////////////////////////////////////////
+``````
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
+SELECT ?name ?brand ?price
+WHERE { 
+  ?individual ex:name ?name .
+  ?individual ex:brand ?brand .
+  ?individual ex:price ?price .
+  ?individual ex:bestFoodPairing ?foodPairing .
+  FILTER(?foodPairing = ex:wafer)
+}</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#AttackingMidfielder"/>
     </Declaration>
@@ -122,9 +300,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#age"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#capacity"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#goalsScored"/>
