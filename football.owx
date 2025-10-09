@@ -191,12 +191,6 @@ WHERE {
 }</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#AttackingMidfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CentralMidfielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CentreBack"/>
     </Declaration>
     <Declaration>
@@ -320,331 +314,466 @@ WHERE {
         <DataProperty IRI="#hasTrophyCount"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isStarter"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#minutesPlayed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#totalMatchsPlayed"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AFCAsianCup_2023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AchrafHakimi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AfricanCupOfNations_2023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AlissonBecker"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AllianzArena"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AlphonsoDavies"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AndyRobertson"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AnfieldStadium"/>
+        <NamedIndividual IRI="#Leverkusen"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AntonioRudiger"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Antony"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Argentina"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Arne_Slot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Barcelona"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bayern_Munich"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Brazil"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BrunoFernandes"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BukayoSaka"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bundesliga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Casemiro"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Chelsea"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CopaAmerica_2024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Curtis_Jones"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DaniCarvajal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DeclanRice"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DidierDeschamps"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EderMilitao"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ederson"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#England"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Eredivisie"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ErlingHaaland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FIFAWorldCup_2026"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FedericoValverde"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#France"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FrenkieDeJong"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GarethSouthgate"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Gennaro_Gattuso"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Germany"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GiovanniDiLorenzo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hansi_Flick"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HarryKane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Harry_Kane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Indonesia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Italy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JamalMusiala"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JanOblak"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JoaoCancelo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JoshuaKimmich"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JulianNagelsmann"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KarimBenzema"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KevinDeBruyne"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KhvichaKvaratskhelia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KieranTrippier"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#KyleWalker"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Laliga"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Lamine_Yamal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LeroySane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Leverkusen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Lewandowski"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ligue_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LionelScaloni"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Liverpool"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Luis_de_Lá_Fuente"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LukaModric"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LukeShaw"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manchester_City"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manchester_United"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ManuelNeuer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MaracanaStadium"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MartinOdegaard"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Mbappe"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Meguire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Messi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MohamedSalah"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NicoloBarella"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OldTrafford"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Onana"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Palmer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Patrick_Kluivert"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Pep_Guardiola"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PhilFoden"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Portugal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Premier_League"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Real_Madrid"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RobertLewandowski"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RobertoMartinez"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rodri"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RonaldAraujo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ronaldo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RubenDias"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Salah"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SantiagoBernabeu"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Serie_A"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Spain"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#StadeDeFrance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TheoHernandez"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ThibautCourtois"/>
+        <NamedIndividual IRI="#ViniciusJunior"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ToniKroos"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UEFAEuro_2024"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Unai_Emery"/>
+        <NamedIndividual IRI="#Spain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VictorOsimhen"/>
+        <NamedIndividual IRI="#JamalMusiala"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ViniciusJunior"/>
+        <NamedIndividual IRI="#AllianzArena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chelsea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lewandowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ronaldo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rodri"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefensiveMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AfricanCupOfNations_2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brazil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LukeShaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsFor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JoaoCancelo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laliga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AchrafHakimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClubManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antony"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VirgilVanDijk"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#WembleyStadium"/>
+        <Class IRI="#RightBack"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#World_Cup"/>
+        <NamedIndividual IRI="#ThibautCourtois"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VictorOsimhen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LionelScaloni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gennaro_Gattuso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RonaldAraujo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KieranTrippier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GiovanniDiLorenzo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester_United"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Xabi_Alonso"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#OldTrafford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casemiro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#N&apos;GoloKante"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BukayoSaka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeclanRice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GarethSouthgate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftBack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arne_Slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JoshuaKimmich"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriendlyMatch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTackles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serie_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StadeDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlphonsoDavies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CopaAmerica_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Messi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalTeamManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patrick_Kluivert"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnockoutMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coaches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LukaModric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FedericoValverde"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minutesPlayed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttackingMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNationality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhilFoden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClubStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bayern_Munich"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGoals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssists"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EderMilitao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MohamedSalah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnfieldStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheoHernandez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AndyRobertson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Striker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luis_de_Lá_Fuente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeroySane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManuelNeuer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrenkieDeJong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unai_Emery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meguire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DidierDeschamps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JulianNagelsmann"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goalkeeper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Onana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BernardoSilva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WembleyStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Premier_League"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KylianMbappe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JanOblak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ederson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#League"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FIFAWorldCup_2026"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isStarter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentralMidfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NicoloBarella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlissonBecker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bundesliga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrunoFernandes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Match"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KyleWalker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eredivisie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lamine_Yamal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#World_Cup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AFCAsianCup_2023"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSaves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryKane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KhvichaKvaratskhelia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertoMartinez"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsAs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liverpool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFAEuro_2024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RubenDias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaracanaStadium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DaniCarvajal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KarimBenzema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JudeBellingham"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mbappe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ligue_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeagueMatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Curtis_Jones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalTournament"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester_City"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AttackingMidfielder"/>
@@ -1027,23 +1156,353 @@ WHERE {
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
-        <NamedIndividual IRI="#Harry_Kane"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#goalsScored"/>
-        <NamedIndividual IRI="#Harry_Kane"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAssists"/>
-        <NamedIndividual IRI="#Harry_Kane"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2670</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2736</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2351</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23281</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#HarryKane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasSaves"/>
-        <NamedIndividual IRI="#Harry_Kane"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2488</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#JudeBellingham"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1702</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#KevinDeBruyne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2907</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#KylianMbappe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2325</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1684</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#PatrikSchick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGoals"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTackles"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minutesPlayed"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2667</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <NamedIndividual IRI="#RobertLewandowski"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#coaches"/>
@@ -1051,10 +1510,6 @@ WHERE {
     </InverseObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
-        <Class IRI="#Player"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#goalsScored"/>
         <Class IRI="#Player"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1093,5 +1548,5 @@ WHERE {
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
