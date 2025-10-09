@@ -850,6 +850,26 @@
         <NamedIndividual IRI="#Messi"/>
         <NamedIndividual IRI="#Argentina"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Harry_Kane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#goalsScored"/>
+        <NamedIndividual IRI="#Harry_Kane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssists"/>
+        <NamedIndividual IRI="#Harry_Kane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSaves"/>
+        <NamedIndividual IRI="#Harry_Kane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#coaches"/>
         <ObjectProperty IRI="#hasCoach"/>
