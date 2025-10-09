@@ -13,9 +13,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Assistant"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AttackingMidfielder"/>
     </Declaration>
     <Declaration>
@@ -32,6 +29,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ClubStadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coach"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Competition"/>
@@ -70,12 +70,6 @@
         <Class IRI="#LeftBack"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Main"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Manager"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Match"/>
     </Declaration>
     <Declaration>
@@ -94,28 +88,13 @@
         <Class IRI="#Position"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Referee"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RightBack"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Season"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stadium"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Starter"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Striker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SubtitutePlayer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VAR"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Winger"/>
@@ -142,13 +121,37 @@
         <ObjectProperty IRI="#playsFor"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#birthDate"/>
+        <DataProperty IRI="#age"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#capacity"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#goalsScored"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssists"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGoals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSaves"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTackles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTrophyCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isStarter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minutesPlayed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalMatchsPlayed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AFCAsianCup_2023"/>
@@ -325,6 +328,9 @@
         <NamedIndividual IRI="#Lewandowski"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Ligue_1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LionelScaloni"/>
     </Declaration>
     <Declaration>
@@ -466,10 +472,6 @@
         <NamedIndividual IRI="#N&apos;GoloKante"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Assistant"/>
-        <Class IRI="#Referee"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#AttackingMidfielder"/>
         <Class IRI="#Midfielder"/>
     </SubClassOf>
@@ -483,7 +485,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClubManager"/>
-        <Class IRI="#Manager"/>
+        <Class IRI="#Coach"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClubStadium"/>
@@ -530,10 +532,6 @@
         <Class IRI="#Defender"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Main"/>
-        <Class IRI="#Referee"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Midfielder"/>
         <Class IRI="#Position"/>
     </SubClassOf>
@@ -543,27 +541,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NationalTeamManager"/>
-        <Class IRI="#Manager"/>
+        <Class IRI="#Coach"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RightBack"/>
         <Class IRI="#Defender"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Starter"/>
-        <Class IRI="#Player"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Striker"/>
         <Class IRI="#Forward"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SubtitutePlayer"/>
-        <Class IRI="#Player"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VAR"/>
-        <Class IRI="#Referee"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Winger"/>
@@ -588,10 +574,6 @@
         <NamedIndividual IRI="#AFCAsianCup_2023"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RightBack"/>
-        <NamedIndividual IRI="#AchrafHakimi"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#InternationalTournament"/>
         <NamedIndividual IRI="#AfricanCupOfNations_2023"/>
     </ClassAssertion>
@@ -604,20 +586,8 @@
         <NamedIndividual IRI="#AllianzArena"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LeftBack"/>
-        <NamedIndividual IRI="#AlphonsoDavies"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LeftBack"/>
-        <NamedIndividual IRI="#AndyRobertson"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#ClubStadium"/>
         <NamedIndividual IRI="#AnfieldStadium"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CentreBack"/>
-        <NamedIndividual IRI="#AntonioRudiger"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -636,10 +606,6 @@
         <NamedIndividual IRI="#BrunoFernandes"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Winger"/>
-        <NamedIndividual IRI="#BukayoSaka"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#League"/>
         <NamedIndividual IRI="#Bundesliga"/>
     </ClassAssertion>
@@ -652,24 +618,12 @@
         <NamedIndividual IRI="#CopaAmerica_2024"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#SubtitutePlayer"/>
-        <NamedIndividual IRI="#Curtis_Jones"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RightBack"/>
-        <NamedIndividual IRI="#DaniCarvajal"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#DefensiveMidfielder"/>
         <NamedIndividual IRI="#DeclanRice"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NationalTeamManager"/>
         <NamedIndividual IRI="#DidierDeschamps"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CentreBack"/>
-        <NamedIndividual IRI="#EderMilitao"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Goalkeeper"/>
@@ -682,10 +636,6 @@
     <ClassAssertion>
         <Class IRI="#League"/>
         <NamedIndividual IRI="#Eredivisie"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Striker"/>
-        <NamedIndividual IRI="#ErlingHaaland"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InternationalTournament"/>
@@ -712,16 +662,8 @@
         <NamedIndividual IRI="#Germany"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RightBack"/>
-        <NamedIndividual IRI="#GiovanniDiLorenzo"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#ClubManager"/>
         <NamedIndividual IRI="#Hansi_Flick"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Striker"/>
-        <NamedIndividual IRI="#HarryKane"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -740,10 +682,6 @@
         <NamedIndividual IRI="#JanOblak"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LeftBack"/>
-        <NamedIndividual IRI="#JoaoCancelo"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#DefensiveMidfielder"/>
         <NamedIndividual IRI="#JoshuaKimmich"/>
     </ClassAssertion>
@@ -752,24 +690,8 @@
         <NamedIndividual IRI="#JulianNagelsmann"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Striker"/>
-        <NamedIndividual IRI="#KarimBenzema"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#AttackingMidfielder"/>
         <NamedIndividual IRI="#KevinDeBruyne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Winger"/>
-        <NamedIndividual IRI="#KhvichaKvaratskhelia"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RightBack"/>
-        <NamedIndividual IRI="#KieranTrippier"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RightBack"/>
-        <NamedIndividual IRI="#KyleWalker"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#League"/>
@@ -780,12 +702,12 @@
         <NamedIndividual IRI="#Lamine_Yamal"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Winger"/>
-        <NamedIndividual IRI="#LeroySane"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Club"/>
         <NamedIndividual IRI="#Leverkusen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#League"/>
+        <NamedIndividual IRI="#Ligue_1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NationalTeamManager"/>
@@ -802,10 +724,6 @@
     <ClassAssertion>
         <Class IRI="#CentralMidfielder"/>
         <NamedIndividual IRI="#LukaModric"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LeftBack"/>
-        <NamedIndividual IRI="#LukeShaw"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Club"/>
@@ -834,18 +752,6 @@
     <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#Meguire"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Messi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Starter"/>
-        <NamedIndividual IRI="#Messi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Winger"/>
-        <NamedIndividual IRI="#MohamedSalah"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CentralMidfielder"/>
@@ -880,28 +786,12 @@
         <NamedIndividual IRI="#Real_Madrid"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Striker"/>
-        <NamedIndividual IRI="#RobertLewandowski"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#NationalTeamManager"/>
         <NamedIndividual IRI="#RobertoMartinez"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DefensiveMidfielder"/>
         <NamedIndividual IRI="#Rodri"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CentreBack"/>
-        <NamedIndividual IRI="#RonaldAraujo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Player"/>
-        <NamedIndividual IRI="#Ronaldo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CentreBack"/>
-        <NamedIndividual IRI="#RubenDias"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
@@ -928,10 +818,6 @@
         <NamedIndividual IRI="#StadeDeFrance"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LeftBack"/>
-        <NamedIndividual IRI="#TheoHernandez"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Goalkeeper"/>
         <NamedIndividual IRI="#ThibautCourtois"/>
     </ClassAssertion>
@@ -946,18 +832,6 @@
     <ClassAssertion>
         <Class IRI="#ClubManager"/>
         <NamedIndividual IRI="#Unai_Emery"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Striker"/>
-        <NamedIndividual IRI="#VictorOsimhen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Winger"/>
-        <NamedIndividual IRI="#ViniciusJunior"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CentreBack"/>
-        <NamedIndividual IRI="#VirgilVanDijk"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NationalStadium"/>
@@ -980,6 +854,46 @@
         <ObjectProperty IRI="#coaches"/>
         <ObjectProperty IRI="#hasCoach"/>
     </InverseObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#goalsScored"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssists"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGoals"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSaves"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTackles"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTrophyCount"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isStarter"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minutesPlayed"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalMatchsPlayed"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
 </Ontology>
 
 
