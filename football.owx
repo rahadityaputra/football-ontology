@@ -21,184 +21,8 @@
 - Deni Norman Zaky / 123220165
 - Hiero Purbandono / 123230086
 
-===============================
-
-== Komentar Untuk Sparsql ==
-----------------------------------------------
-1. Tolong tampilkan individual atau intance yang bertipe iceCream
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?individual
-WHERE {
-  ?individual rdf:type ex:iceCream 
-}
-```
-----------------------------------------------
-2, Terus tampilin namanya dan urutin berdasarkan individual-nya
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?individual ?name
-WHERE {
-  ?individual rdf:type ex:iceCream .
-  ?individual ex:name ?name .
-}
-ORDER BY ?individual
-```
-----------------------------------------------
-3. Tampilkan individual iceCream yang memiliki rasa vanilla
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?individual
-WHERE {
-  ?individual ex:hasFlavors ex:vanilla .
-}
-```
-----------------------------------------------
-4. Apa nama iceCream yang memiliki rasa vanilla itu
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-WHERE {
-  ?individual ex:name ?name .
-  ?individual ex:hasFlavors ex:vanilla .
-}
-```
-----------------------------------------------
-5.Tampilkan individual dan nama iceCream yang cocok untuk dimakan saat ada kesempatan (occasion)
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?individual ?name
-WHERE {
-  ?individual ex:bestEating ex:occasion .
-  ?individual ex:name ?name
-}
-```
-----------------------------------------------
-6.Apa nama iceCream yang cocok diminum dengan kopi
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?individual ?name
-WHERE {
-  ?individual ex:bestDrinkPairing ex:cofee .
-  ?individual ex:name ?name
-}
-```
-///////////////////////////////
-== Percobaan saat di kelas ==
-///////////////////////////////
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-	WHERE { 
-	  ?individual ex:name ?name .
-  ?individual ex:hasFlavors ex:vanilla .
-	}
-```
-//////////////////////////////
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-	WHERE { 
-	  ?individual ex:name ?name .
-  ?individual ex:hasFlavors ex:chocolate .
-	}
-```
-/////////////////////////////////
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-	WHERE { 
-	  ?individual ex:name ?name .
-  ?individual ex:bestFoodPairing ex:wafer .
-	}
-```
-//////////////////////////////////////////
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-	WHERE { 
-	  ?individual ex:name ?name .
-  ?individual ex:bestDrinkPairing ex:blackCoffee .
-	}
-``
-/////////////////////////////////////
-```
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name
-	WHERE { 
-	  ?individual ex:name ?name .
-	  ?individual ex:hasBrand ?brand1 .
-	}
-```
-/////////////////////////////////////////////
-``````
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
-PREFIX ex: &lt;http://www.semanticweb.org/akbar/ontologies/2024/8/untitled-ontology-6#&gt;
-SELECT ?name ?brand ?price
-WHERE { 
-  ?individual ex:name ?name .
-  ?individual ex:brand ?brand .
-  ?individual ex:price ?price .
-  ?individual ex:bestFoodPairing ?foodPairing .
-  FILTER(?foodPairing = ex:wafer)
-}</Literal>
+===============================</Literal>
     </Annotation>
-    <Declaration>
-        <Class IRI="#AttackingMidfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CentralMidfielder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CentreBack"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#Club"/>
     </Declaration>
@@ -221,9 +45,6 @@ WHERE {
         <Class IRI="#Defender"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DefensiveMidfielder"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Forward"/>
     </Declaration>
     <Declaration>
@@ -234,9 +55,6 @@ WHERE {
     </Declaration>
     <Declaration>
         <Class IRI="#League"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeftBack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Midfielder"/>
@@ -254,16 +72,7 @@ WHERE {
         <Class IRI="#Position"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RightBack"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Stadium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Striker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Winger"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#coaches"/>
@@ -338,6 +147,9 @@ WHERE {
         <NamedIndividual IRI="#Atletico_Bilbao"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Attacking_Midfielder"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Barcelona"/>
     </Declaration>
     <Declaration>
@@ -353,7 +165,19 @@ WHERE {
         <NamedIndividual IRI="#Bundesliga"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Central_Midfielder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Centre_Back"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Czech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Defensive_Midfielder"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dutch"/>
@@ -366,6 +190,9 @@ WHERE {
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ErlingHaaland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FlorianWirtz"/>
@@ -410,6 +237,9 @@ WHERE {
         <NamedIndividual IRI="#Laliga"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Left_Back"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Leverkusen"/>
     </Declaration>
     <Declaration>
@@ -429,6 +259,9 @@ WHERE {
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MartinOdegaard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Norway"/>
@@ -458,6 +291,9 @@ WHERE {
         <NamedIndividual IRI="#Real_Madrid"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Right_Back"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RobertLewandowski"/>
     </Declaration>
     <Declaration>
@@ -470,7 +306,13 @@ WHERE {
         <NamedIndividual IRI="#Serie_A"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Striker"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Swiss"/>
@@ -482,10 +324,13 @@ WHERE {
         <NamedIndividual IRI="#UnaiSimon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Unai_Emery"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WilliamSaliba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Winger"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#World_Cup"/>
@@ -496,18 +341,9 @@ WHERE {
     <Declaration>
         <NamedIndividual IRI="#YannSommer"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#AttackingMidfielder"/>
-        <Class IRI="#Midfielder"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CentralMidfielder"/>
-        <Class IRI="#Midfielder"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CentreBack"/>
-        <Class IRI="#Defender"/>
-    </SubClassOf>
+    <Declaration>
+        <NamedIndividual IRI="#goalkeeper"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#ClubCoach"/>
         <Class IRI="#Coach"/>
@@ -519,10 +355,6 @@ WHERE {
     <SubClassOf>
         <Class IRI="#Defender"/>
         <Class IRI="#Position"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DefensiveMidfielder"/>
-        <Class IRI="#Midfielder"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Forward"/>
@@ -541,10 +373,6 @@ WHERE {
         <Class IRI="#Competition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LeftBack"/>
-        <Class IRI="#Defender"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Midfielder"/>
         <Class IRI="#Position"/>
     </SubClassOf>
@@ -555,18 +383,6 @@ WHERE {
     <SubClassOf>
         <Class IRI="#NationalTeamCoach"/>
         <Class IRI="#Coach"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RightBack"/>
-        <Class IRI="#Defender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Striker"/>
-        <Class IRI="#Forward"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Winger"/>
-        <Class IRI="#Forward"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Club"/>
@@ -619,6 +435,10 @@ WHERE {
         <NamedIndividual IRI="#Atletico_Bilbao"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Midfielder"/>
+        <NamedIndividual IRI="#Attacking_Midfielder"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#BernardoSilva"/>
     </ClassAssertion>
@@ -631,8 +451,24 @@ WHERE {
         <NamedIndividual IRI="#Bundesliga"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Midfielder"/>
+        <NamedIndividual IRI="#Central_Midfielder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Defender"/>
+        <NamedIndividual IRI="#Centre_Back"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#Czech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Midfielder"/>
+        <NamedIndividual IRI="#Defensive_Midfielder"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -649,6 +485,10 @@ WHERE {
     <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
@@ -695,16 +535,16 @@ WHERE {
         <NamedIndividual IRI="#JulesKounde"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AttackingMidfielder"/>
-        <NamedIndividual IRI="#KevinDeBruyne"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#KylianMbappe"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#League"/>
         <NamedIndividual IRI="#Laliga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Defender"/>
+        <NamedIndividual IRI="#Left_Back"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Club"/>
@@ -731,8 +571,8 @@ WHERE {
         <NamedIndividual IRI="#MarkFlekken"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AttackingMidfielder"/>
-        <NamedIndividual IRI="#MartinOdegaard"/>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -767,6 +607,10 @@ WHERE {
         <NamedIndividual IRI="#Real_Madrid"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Defender"/>
+        <NamedIndividual IRI="#Right_Back"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#RobertLewandowski"/>
     </ClassAssertion>
@@ -783,8 +627,16 @@ WHERE {
         <NamedIndividual IRI="#Serie_A"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forward"/>
+        <NamedIndividual IRI="#Striker"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -800,11 +652,15 @@ WHERE {
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ClubCoach"/>
-        <NamedIndividual IRI="#Unai_Emery"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#WilliamSaliba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forward"/>
+        <NamedIndividual IRI="#Winger"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ClubCoach"/>
@@ -814,10 +670,19 @@ WHERE {
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#YannSommer"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goalkeeper"/>
+        <NamedIndividual IRI="#goalkeeper"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#AntonioRudiger"/>
         <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsAs"/>
+        <NamedIndividual IRI="#AntonioRudiger"/>
+        <NamedIndividual IRI="#Centre_Back"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsFor"/>
@@ -845,9 +710,24 @@ WHERE {
         <NamedIndividual IRI="#Portugal"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsAs"/>
+        <NamedIndividual IRI="#BernardoSilva"/>
+        <NamedIndividual IRI="#Attacking_Midfielder"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#BernardoSilva"/>
         <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+        <NamedIndividual IRI="#Brazil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -855,14 +735,34 @@ WHERE {
         <NamedIndividual IRI="#Norway"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsAs"/>
+        <NamedIndividual IRI="#ErlingHaaland"/>
+        <NamedIndividual IRI="#Striker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
         <NamedIndividual IRI="#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
+        <NamedIndividual IRI="#Atletico_Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#FlorianWirtz"/>
         <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsAs"/>
+        <NamedIndividual IRI="#FlorianWirtz"/>
+        <NamedIndividual IRI="#Attacking_Midfielder"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsFor"/>
@@ -878,6 +778,11 @@ WHERE {
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#GianluigiDonnarumma"/>
         <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+        <NamedIndividual IRI="#Barcelona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -935,6 +840,16 @@ WHERE {
         <NamedIndividual IRI="#Leverkusen"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
+        <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#PatrikSchick"/>
         <NamedIndividual IRI="#Germany"/>
@@ -953,6 +868,11 @@ WHERE {
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#PauCubarsi"/>
         <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -980,6 +900,16 @@ WHERE {
         <NamedIndividual IRI="#Manchester_City"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+        <NamedIndividual IRI="#Inter_Milan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#UnaiSimon"/>
         <NamedIndividual IRI="#Spain"/>
@@ -990,9 +920,14 @@ WHERE {
         <NamedIndividual IRI="#Atletico_Bilbao"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
+        <NamedIndividual IRI="#Bayern_Munich"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
-        <NamedIndividual IRI="#Unai_Emery"/>
-        <NamedIndividual IRI="#Spain"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -1003,6 +938,11 @@ WHERE {
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#WilliamSaliba"/>
         <NamedIndividual IRI="#Arsenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coaches"/>
+        <NamedIndividual IRI="#Xabi_Alonso"/>
+        <NamedIndividual IRI="#Leverkusen"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
