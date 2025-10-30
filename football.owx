@@ -24,7 +24,13 @@
 ===============================</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#Achievement"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClubAchievement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClubCoach"/>
@@ -34,6 +40,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Coach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoachAchievement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Competition"/>
@@ -51,6 +60,15 @@
         <Class IRI="#Goalkeeper"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoryCoaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HistoryPlaying"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InternationalTournament"/>
     </Declaration>
     <Declaration>
@@ -66,13 +84,28 @@
         <Class IRI="#NationalTeamCoach"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PlayStyle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayerAchievement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Position"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coachWonAchievement"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#coaches"/>
@@ -87,16 +120,19 @@
         <ObjectProperty IRI="#hasStadium"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#locatedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#participatesIn"/>
+        <ObjectProperty IRI="#playerWonAchievement"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#playsAs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#playsFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suitableForClub"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesPlayStyle"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#age"/>
@@ -129,6 +165,9 @@
         <NamedIndividual IRI="#AllianzArena"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Allianz_Arena"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AnfieldStadium"/>
     </Declaration>
     <Declaration>
@@ -136,6 +175,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArneSlot_PremierLeagueChampionCoach_2024"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Arne_Slot"/>
@@ -165,6 +207,9 @@
         <NamedIndividual IRI="#Bundesliga"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Camp_Nou"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Carlo_Ancelotti"/>
     </Declaration>
     <Declaration>
@@ -172,6 +217,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Centre_Back"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Czech"/>
@@ -183,6 +231,9 @@
         <NamedIndividual IRI="#Dutch"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Emirates"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#England"/>
     </Declaration>
     <Declaration>
@@ -192,13 +243,22 @@
         <NamedIndividual IRI="#ErlingHaaland"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ErlingHaaland_PremierLeagueTopScorer_2024"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ernesto_Valverde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Etihad"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FlorianWirtz"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gegenpressing"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gennaro_Gattuso"/>
@@ -210,10 +270,25 @@
         <NamedIndividual IRI="#GianluigiDonnarumma"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2023"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Hansi_Flick"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HarryKane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HarryKane_BundesligaTopScorer_2024"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Inter_Milan"/>
@@ -234,6 +309,9 @@
         <NamedIndividual IRI="#KylianMbappe"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#KylianMbappe_Ligue1TopScorer_2023"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Laliga"/>
     </Declaration>
     <Declaration>
@@ -247,6 +325,24 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Liverpool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Low_Block"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2023"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Manchester_City"/>
@@ -285,6 +381,9 @@
         <NamedIndividual IRI="#Portugal"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Premier_League"/>
     </Declaration>
     <Declaration>
@@ -300,7 +399,16 @@
         <NamedIndividual IRI="#RubenDias"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#San_Mames"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_Siro"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Santiago_Bernabéu"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Serie_A"/>
@@ -319,6 +427,18 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ThibautCourtois"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFA_ChampionLeague_2025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFA_ConferenceLeague_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFA_EuropaLeague_2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UEFA_SuperCup_2024"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UnaiSimon"/>
@@ -342,8 +462,15 @@
         <NamedIndividual IRI="#YannSommer"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#anfield"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#goalkeeper"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="#ClubAchievement"/>
+        <Class IRI="#Achievement"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClubCoach"/>
         <Class IRI="#Coach"/>
@@ -351,6 +478,10 @@
     <SubClassOf>
         <Class IRI="#ClubStadium"/>
         <Class IRI="#Stadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoachAchievement"/>
+        <Class IRI="#Achievement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Defender"/>
@@ -363,6 +494,14 @@
     <SubClassOf>
         <Class IRI="#Goalkeeper"/>
         <Class IRI="#Position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoryCoaching"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HistoryPlaying"/>
+        <Class IRI="#History"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InternationalTournament"/>
@@ -383,6 +522,10 @@
     <SubClassOf>
         <Class IRI="#NationalTeamCoach"/>
         <Class IRI="#Coach"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayerAchievement"/>
+        <Class IRI="#Achievement"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Club"/>
@@ -411,6 +554,10 @@
         <NamedIndividual IRI="#AllianzArena"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Allianz_Arena"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ClubStadium"/>
         <NamedIndividual IRI="#AnfieldStadium"/>
     </ClassAssertion>
@@ -421,6 +568,10 @@
     <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#Argentina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#ArneSlot_PremierLeagueChampionCoach_2024"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ClubCoach"/>
@@ -451,6 +602,10 @@
         <NamedIndividual IRI="#Bundesliga"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Camp_Nou"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ClubCoach"/>
         <NamedIndividual IRI="#Carlo_Ancelotti"/>
     </ClassAssertion>
@@ -461,6 +616,10 @@
     <ClassAssertion>
         <Class IRI="#Defender"/>
         <NamedIndividual IRI="#Centre_Back"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlayStyle"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -475,6 +634,10 @@
         <NamedIndividual IRI="#Dutch"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Emirates"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#England"/>
     </ClassAssertion>
@@ -487,8 +650,16 @@
         <NamedIndividual IRI="#ErlingHaaland"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PlayerAchievement"/>
+        <NamedIndividual IRI="#ErlingHaaland_PremierLeagueTopScorer_2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ClubCoach"/>
         <NamedIndividual IRI="#Ernesto_Valverde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Etihad"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
@@ -497,6 +668,10 @@
     <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlayStyle"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NationalTeamCoach"/>
@@ -511,12 +686,32 @@
         <NamedIndividual IRI="#GianluigiDonnarumma"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ClubCoach"/>
         <NamedIndividual IRI="#Hansi_Flick"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#HarryKane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlayerAchievement"/>
+        <NamedIndividual IRI="#HarryKane_BundesligaTopScorer_2024"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Club"/>
@@ -539,6 +734,10 @@
         <NamedIndividual IRI="#KylianMbappe"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PlayerAchievement"/>
+        <NamedIndividual IRI="#KylianMbappe_Ligue1TopScorer_2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#League"/>
         <NamedIndividual IRI="#Laliga"/>
     </ClassAssertion>
@@ -557,6 +756,30 @@
     <ClassAssertion>
         <Class IRI="#Club"/>
         <NamedIndividual IRI="#Liverpool"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubAchievement"/>
+        <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlayStyle"/>
+        <NamedIndividual IRI="#Low_Block"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubAchievement"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubAchievement"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubAchievement"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClubAchievement"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2023"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Club"/>
@@ -599,6 +822,10 @@
         <NamedIndividual IRI="#Poland"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PlayStyle"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#League"/>
         <NamedIndividual IRI="#Premier_League"/>
     </ClassAssertion>
@@ -619,8 +846,20 @@
         <NamedIndividual IRI="#RubenDias"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#San_Mames"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#San_Siro"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ClubStadium"/>
         <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#Santiago_Bernabéu"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#League"/>
@@ -647,6 +886,22 @@
         <NamedIndividual IRI="#ThibautCourtois"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#InternationalTournament"/>
+        <NamedIndividual IRI="#UEFA_ChampionLeague_2025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalTournament"/>
+        <NamedIndividual IRI="#UEFA_ConferenceLeague_2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalTournament"/>
+        <NamedIndividual IRI="#UEFA_EuropaLeague_2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalTournament"/>
+        <NamedIndividual IRI="#UEFA_SuperCup_2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#UnaiSimon"/>
     </ClassAssertion>
@@ -671,6 +926,10 @@
         <NamedIndividual IRI="#YannSommer"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#anfield"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Goalkeeper"/>
         <NamedIndividual IRI="#goalkeeper"/>
     </ClassAssertion>
@@ -690,6 +949,11 @@
         <NamedIndividual IRI="#Real_Madrid"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#Arne_Slot"/>
+        <NamedIndividual IRI="#ArneSlot_PremierLeagueChampionCoach_2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#coaches"/>
         <NamedIndividual IRI="#Arne_Slot"/>
         <NamedIndividual IRI="#Liverpool"/>
@@ -698,6 +962,21 @@
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#Arne_Slot"/>
         <NamedIndividual IRI="#Dutch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Arne_Slot"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Arsenal"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Atletico_Bilbao"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCoach"/>
@@ -730,6 +1009,16 @@
         <NamedIndividual IRI="#Brazil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
         <NamedIndividual IRI="#Norway"/>
@@ -755,6 +1044,11 @@
         <NamedIndividual IRI="#Spain"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
+        <NamedIndividual IRI="#Low_Block"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#FlorianWirtz"/>
         <NamedIndividual IRI="#Germany"/>
@@ -767,6 +1061,11 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#FlorianWirtz"/>
+        <NamedIndividual IRI="#Liverpool"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
         <NamedIndividual IRI="#Liverpool"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -790,6 +1089,11 @@
         <NamedIndividual IRI="#Germany"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#HarryKane"/>
         <NamedIndividual IRI="#England"/>
@@ -798,6 +1102,11 @@
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#HarryKane"/>
         <NamedIndividual IRI="#Bayern_Munich"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Inter_Milan"/>
+        <NamedIndividual IRI="#Low_Block"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -828,6 +1137,51 @@
         <ObjectProperty IRI="#playsFor"/>
         <NamedIndividual IRI="#KylianMbappe"/>
         <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Leverkusen"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <NamedIndividual IRI="#Liverpool"/>
+        <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <NamedIndividual IRI="#Low_Block"/>
+        <NamedIndividual IRI="#Inter_Milan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2021"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2022"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+        <NamedIndividual IRI="#ManCity_PremierLeagueChampion_2023"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -850,6 +1204,11 @@
         <NamedIndividual IRI="#Spain"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#PatrikSchick"/>
         <NamedIndividual IRI="#Germany"/>
@@ -870,6 +1229,26 @@
         <NamedIndividual IRI="#Barcelona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2021"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2022"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Guardiola_PremierLeagueChampionCoach_2023"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#coaches"/>
         <NamedIndividual IRI="#Pep_Guardiola"/>
         <NamedIndividual IRI="#Manchester_City"/>
@@ -878,6 +1257,21 @@
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#Pep_Guardiola"/>
         <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <NamedIndividual IRI="#Possession_Based"/>
+        <NamedIndividual IRI="#Manchester_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <NamedIndividual IRI="#Real_Madrid"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -910,6 +1304,11 @@
         <NamedIndividual IRI="#Italy"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#UnaiSimon"/>
         <NamedIndividual IRI="#Spain"/>
@@ -930,6 +1329,11 @@
         <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
+        <NamedIndividual IRI="#Gegenpressing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#WilliamSaliba"/>
         <NamedIndividual IRI="#France"/>
@@ -948,6 +1352,11 @@
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#Xabi_Alonso"/>
         <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#Xabi_Alonso"/>
+        <NamedIndividual IRI="#Possession_Based"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -1654,10 +2063,26 @@
         <NamedIndividual IRI="#YannSommer"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">32</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCoach"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#coaches"/>
         <ObjectProperty IRI="#hasCoach"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <Class IRI="#Coach"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#coaches"/>
         <Class IRI="#Coach"/>
@@ -1675,6 +2100,10 @@
         <Class IRI="#Club"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playerWonAchievement"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#playsAs"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
@@ -1682,17 +2111,29 @@
         <ObjectProperty IRI="#playsFor"/>
         <Class IRI="#Player"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <Class IRI="#PlayStyle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <Class IRI="#Coach"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clubHasPlayStyle"/>
+        <Class IRI="#PlayStyle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clubWonAchievement"/>
+        <Class IRI="#ClubAchievement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <Class IRI="#CoachAchievement"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#coaches"/>
         <Class IRI="#Club"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#coaches"/>
-        <Class IRI="#Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#coaches"/>
-        <Class IRI="#Player"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCoach"/>
@@ -1707,12 +2148,24 @@
         <Class IRI="#Stadium"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#playerWonAchievement"/>
+        <Class IRI="#PlayerAchievement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#playsAs"/>
         <Class IRI="#Position"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#playsFor"/>
         <Class IRI="#Club"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suitableForClub"/>
+        <Class IRI="#Club"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <Class IRI="#PlayStyle"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
