@@ -240,6 +240,15 @@
         <NamedIndividual IRI="#Eredivisie"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ErikTenHag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2022"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ErlingHaaland"/>
     </Declaration>
     <Declaration>
@@ -330,6 +339,15 @@
         <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LouisVanGaal_UCLWinnerCoach_1995"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LouisVanGaal_WorldCupThirdPlaceCoach_2014"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Low_Block"/>
     </Declaration>
     <Declaration>
@@ -358,6 +376,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Mikel_Arteta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netherlands"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Norway"/>
@@ -646,6 +667,18 @@
         <NamedIndividual IRI="#Eredivisie"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2022"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Player"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
     </ClassAssertion>
@@ -762,6 +795,18 @@
         <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ClubCoach"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#LouisVanGaal_UCLWinnerCoach_1995"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoachAchievement"/>
+        <NamedIndividual IRI="#LouisVanGaal_WorldCupThirdPlaceCoach_2014"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#PlayStyle"/>
         <NamedIndividual IRI="#Low_Block"/>
     </ClassAssertion>
@@ -796,6 +841,10 @@
     <ClassAssertion>
         <Class IRI="#ClubCoach"/>
         <NamedIndividual IRI="#Mikel_Arteta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Netherlands"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -961,7 +1010,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
         <NamedIndividual IRI="#Arne_Slot"/>
-        <NamedIndividual IRI="#Dutch"/>
+        <NamedIndividual IRI="#Netherlands"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#usesPlayStyle"/>
@@ -1017,6 +1066,26 @@
         <ObjectProperty IRI="#suitableForClub"/>
         <NamedIndividual IRI="#Counter_Attack"/>
         <NamedIndividual IRI="#Real_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2021"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <NamedIndividual IRI="#ErikTenHag_EredivisieChampionCoach_2022"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasNationality"/>
@@ -1152,6 +1221,26 @@
         <ObjectProperty IRI="#clubWonAchievement"/>
         <NamedIndividual IRI="#Liverpool"/>
         <NamedIndividual IRI="#Liverpool_PremierLeagueChampion_2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <NamedIndividual IRI="#LouisVanGaal_UCLWinnerCoach_1995"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coachWonAchievement"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <NamedIndividual IRI="#LouisVanGaal_WorldCupThirdPlaceCoach_2014"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesPlayStyle"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <NamedIndividual IRI="#Counter_Attack"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#suitableForClub"/>
