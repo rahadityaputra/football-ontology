@@ -98,6 +98,158 @@
     <Declaration>
         <Class IRI="#Stadium"/>
     </Declaration>
+
+<!-- ini kode manul -->
+    <Declaration><DataProperty IRI="#averageSquadAge"/></Declaration>
+    <Declaration><NamedIndividual IRI="#Arsenal_2021_22"/></Declaration>
+    <Declaration><NamedIndividual IRI="#Arsenal_2022_23"/></Declaration>
+    <Declaration><NamedIndividual IRI="#Leverkusen_2022_23"/></Declaration>
+    <Declaration><NamedIndividual IRI="#Leverkusen_2023_24"/></Declaration>
+    <Declaration><NamedIndividual IRI="#ManUtd_2022_23"/></Declaration>
+    <DataPropertyDomain><DataProperty IRI="#averageSquadAge"/><Class IRI="#Club"/></DataPropertyDomain>
+    <DataPropertyRange><DataProperty IRI="#averageSquadAge"/><Datatype abbreviatedIRI="xsd:decimal"/></DataPropertyRange>
+
+<AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#age</IRI><Literal>Age</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#averageSquadAge</IRI><Literal>Average Squad Age</Literal></AnnotationAssertion>
+    <!-- <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#coaches</IRI><Literal>coaches</Literal></AnnotationAssertion> -->
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#coachingExperienceYears</IRI><Literal>Coaching Experience (Years)</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Coach</IRI><Literal>Coach</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Club</IRI><Literal>Club</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Arsenal_2021_22</IRI><Literal>Arsenal 2021/22</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Arsenal_2022_23</IRI><Literal>Arsenal 2022/23</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Erik_Ten_Hag</IRI><Literal>Erik Ten Hag</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Leverkusen_2022_23</IRI><Literal>Bayer Leverkusen 2022/23</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Leverkusen_2023_24</IRI><Literal>Bayer Leverkusen 2023/24</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#ManUtd_2022_23</IRI><Literal>Manchester United 2022/23</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Mikel_Arteta</IRI><Literal>Mikel Arteta</Literal></AnnotationAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Xabi_Alonso</IRI><Literal>Xabi Alonso</Literal></AnnotationAssertion>
+    
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Arsenal_2021_22"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Arsenal_2021_22"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.8</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Arsenal_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Arsenal_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.1</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Coach"/><NamedIndividual IRI="#Erik_Ten_Hag"/></ClassAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Erik_Ten_Hag"/><NamedIndividual IRI="#ManUtd_2022_23"/></ObjectPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#age"/><NamedIndividual IRI="#Erik_Ten_Hag"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal></DataPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#coachingExperienceYears"/><NamedIndividual IRI="#Erik_Ten_Hag"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Leverkusen_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Leverkusen_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.2</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Leverkusen_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Leverkusen_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.9</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#ManUtd_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#ManUtd_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.6</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Coach"/><NamedIndividual IRI="#Mikel_Arteta"/></ClassAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Mikel_Arteta"/><NamedIndividual IRI="#Arsenal_2021_22"/></ObjectPropertyAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Mikel_Arteta"/><NamedIndividual IRI="#Arsenal_2022_23"/></ObjectPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#age"/><NamedIndividual IRI="#Mikel_Arteta"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal></DataPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#coachingExperienceYears"/><NamedIndividual IRI="#Mikel_Arteta"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal></DataPropertyAssertion>
+    
+    <ClassAssertion><Class IRI="#Coach"/><NamedIndividual IRI="#Xabi_Alonso"/></ClassAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Xabi_Alonso"/><NamedIndividual IRI="#Leverkusen_2022_23"/></ObjectPropertyAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Xabi_Alonso"/><NamedIndividual IRI="#Leverkusen_2023_24"/></ObjectPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#age"/><NamedIndividual IRI="#Xabi_Alonso"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal></DataPropertyAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#coachingExperienceYears"/><NamedIndividual IRI="#Xabi_Alonso"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal></DataPropertyAssertion>
+
+<Declaration><NamedIndividual IRI="#Arsenal_2023_24"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Arsenal_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Arsenal_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.0</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Arsenal_2023_24</IRI><Literal>Arsenal 2023/24</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Mikel_Arteta"/><NamedIndividual IRI="#Arsenal_2023_24"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Arsenal_2022_23"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Arsenal_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Arsenal_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.1</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Arsenal_2022_23</IRI><Literal>Arsenal 2022/23</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Mikel_Arteta"/><NamedIndividual IRI="#Arsenal_2022_23"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Leverkusen_2023_24"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Leverkusen_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Leverkusen_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.9</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Leverkusen_2023_24</IRI><Literal>Bayer Leverkusen 2023/24</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Xabi_Alonso"/><NamedIndividual IRI="#Leverkusen_2023_24"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Leverkusen_2022_23"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Leverkusen_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Leverkusen_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.2</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Leverkusen_2022_23</IRI><Literal>Bayer Leverkusen 2022/23</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Xabi_Alonso"/><NamedIndividual IRI="#Leverkusen_2022_23"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Feyenoord_2023_24"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Feyenoord_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Feyenoord_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.2</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Feyenoord_2023_24</IRI><Literal>Feyenoord 2023/24</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Arne_Slot"/><NamedIndividual IRI="#Feyenoord_2023_24"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Liverpool_2024_25"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Liverpool_2024_25"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Liverpool_2024_25"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.9</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Liverpool_2024_25</IRI><Literal>Liverpool 2024/25</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Arne_Slot"/><NamedIndividual IRI="#Liverpool_2024_25"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Ajax_2021_22"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Ajax_2021_22"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Ajax_2021_22"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.7</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Ajax_2021_22</IRI><Literal>Ajax 2021/22</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Erik_Ten_Hag"/><NamedIndividual IRI="#Ajax_2021_22"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#ManUtd_2023_24"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#ManUtd_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#ManUtd_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.5</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#ManUtd_2023_24</IRI><Literal>Manchester United 2023/24</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Erik_Ten_Hag"/><NamedIndividual IRI="#ManUtd_2023_24"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#ManUtd_2022_23"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#ManUtd_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#ManUtd_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.6</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#ManUtd_2022_23</IRI><Literal>Manchester United 2022/23</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Erik_Ten_Hag"/><NamedIndividual IRI="#ManUtd_2022_23"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Burnley_2023_24"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Burnley_2023_24"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Burnley_2023_24"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.6</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Burnley_2023_24</IRI><Literal>Burnley 2023/24</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Vincent_Kompany"/><NamedIndividual IRI="#Burnley_2023_24"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Bayern_2024_25"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Bayern_2024_25"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Bayern_2024_25"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">26.7</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Bayern_2024_25</IRI><Literal>Bayern Munich 2024/25</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Vincent_Kompany"/><NamedIndividual IRI="#Bayern_2024_25"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#ManCity_2024_25"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#ManCity_2024_25"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#ManCity_2024_25"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.9</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#ManCity_2024_25</IRI><Literal>Manchester City 2024/25</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Pep_Guardiola"/><NamedIndividual IRI="#ManCity_2024_25"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#ManCity_2022_23"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#ManCity_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#ManCity_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27.7</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#ManCity_2022_23</IRI><Literal>Manchester City 2022/23</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Pep_Guardiola"/><NamedIndividual IRI="#ManCity_2022_23"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Inter_2022_23"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Inter_2022_23"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Inter_2022_23"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28.4</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Inter_2022_23</IRI><Literal>Inter Milan 2022/23</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Simone_Inzaghi"/><NamedIndividual IRI="#Inter_2022_23"/></ObjectPropertyAssertion>
+
+    <Declaration><NamedIndividual IRI="#Inter_2024_25"/></Declaration>
+    <ClassAssertion><Class IRI="#Club"/><NamedIndividual IRI="#Inter_2024_25"/></ClassAssertion>
+    <DataPropertyAssertion><DataProperty IRI="#averageSquadAge"/><NamedIndividual IRI="#Inter_2024_25"/><Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28.6</Literal></DataPropertyAssertion>
+    <AnnotationAssertion><AnnotationProperty abbreviatedIRI="rdfs:label"/><IRI>#Inter_2024_25</IRI><Literal>Inter Milan 2024/25</Literal></AnnotationAssertion>
+    <ObjectPropertyAssertion><ObjectProperty IRI="#coaches"/><NamedIndividual IRI="#Simone_Inzaghi"/><NamedIndividual IRI="#Inter_2024_25"/></ObjectPropertyAssertion>
+
+
+
+    <!-- batas -->
+
     <Declaration>
         <ObjectProperty IRI="#clubHasPlayStyle"/>
     </Declaration>
@@ -138,6 +290,9 @@
         <DataProperty IRI="#age"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#coachingExperienceYears"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasAssists"/>
     </Declaration>
     <Declaration>
@@ -154,9 +309,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#minutesPlayed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#playerName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#totalMatchsPlayed"/>
@@ -1494,6 +1646,16 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Arne_Slot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#Arne_Slot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
         <NamedIndividual IRI="#BernardoSilva"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">29</Literal>
     </DataPropertyAssertion>
@@ -1529,6 +1691,26 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">66</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#Carlo_Ancelotti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#ErikTenHag"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
     </DataPropertyAssertion>
@@ -1561,6 +1743,16 @@
         <DataProperty IRI="#totalMatchsPlayed"/>
         <NamedIndividual IRI="#ErlingHaaland"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#Ernesto_Valverde"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
@@ -1631,6 +1823,16 @@
         <DataProperty IRI="#totalMatchsPlayed"/>
         <NamedIndividual IRI="#GianluigiDonnarumma"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#Hansi_Flick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
@@ -1809,6 +2011,16 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#LouisVanGaal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
         <NamedIndividual IRI="#MarkFlekken"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">31</Literal>
     </DataPropertyAssertion>
@@ -1876,6 +2088,16 @@
         <DataProperty IRI="#totalMatchsPlayed"/>
         <NamedIndividual IRI="#MartinOdegaard"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <NamedIndividual IRI="#Mikel_Arteta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
@@ -1949,6 +2171,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Pep_Guardiola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
         <NamedIndividual IRI="#RobertLewandowski"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
     </DataPropertyAssertion>
@@ -2011,6 +2238,11 @@
         <DataProperty IRI="#totalMatchsPlayed"/>
         <NamedIndividual IRI="#RubenDias"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Simone_Inzaghi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">49</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
@@ -2084,6 +2316,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Vincent_Kompany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
         <NamedIndividual IRI="#WilliamSaliba"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">23</Literal>
     </DataPropertyAssertion>
@@ -2116,6 +2353,11 @@
         <DataProperty IRI="#totalMatchsPlayed"/>
         <NamedIndividual IRI="#WilliamSaliba"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Xabi_Alonso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#age"/>
@@ -2258,7 +2500,15 @@
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
+        <Class IRI="#Coach"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
         <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coachingExperienceYears"/>
+        <Class IRI="#Coach"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasAssists"/>
